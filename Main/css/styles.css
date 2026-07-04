@@ -1,0 +1,331 @@
+html, body {
+  height: 100%; 
+  margin: 0; 
+  display: flex; 
+  flex-direction: column; 
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Header styling */
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+/* Header container (centered content) */
+.header-container {
+  max-width: 1200px; 
+  margin: 0.2% auto;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;  
+}
+
+/* Logo section styling */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40%;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 18px;
+  color: #004c00;
+  line-height: 1.2;
+  padding-top: 10%;
+}
+
+.logo-text .line {
+  display: block;
+  letter-spacing: 1px;
+}
+
+.profile-icon img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar-container {
+  background-color: #33801933;
+  width: 100%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar content  */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;   
+  padding: 4px 0;
+}
+
+/* Navbar content (evenly spaced with full hover area) */
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+.navbar ul li {
+  flex-grow: 1; /* Makes all list items share equal space */
+  text-align: center; /* Centers the text inside each item */
+}
+
+.navbar ul li a {
+  display: block; /* Makes the anchor fill the list item */
+  text-decoration: none;
+  color: #4b4b4b;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+/* Dropdown container */
+.navbar ul li.dropdown {
+  position: relative; /* This ensures the dropdown content appears below the list item */
+}
+
+/* Style for the dropdown button (Multimedia) */
+.navbar ul li.dropdown .dropbtn {
+  display: block; /* Make the dropdown button fill the list item */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative; /* To position the arrow next to it */
+}
+
+.navbar ul li.dropdown .dropbtn::after {
+  content: " ▼"; /* Adds the down arrow */
+  font-size: 16px;
+  margin-left: 8px; /* Space between the text and the arrow */
+  transition: transform 0.3s ease; /* Smooth flip effect */
+  position: absolute;
+}
+
+/* Flip the arrow when the dropdown is open */
+.navbar ul li.dropdown:hover .dropbtn::after {
+  transform: rotate(180deg); /* Flip the arrow */
+}
+
+/* Change background on hover for dropdown button */
+.navbar ul li.dropdown .dropbtn:hover {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+/* Dropdown content */
+.navbar ul li.dropdown .dropdown-content {
+  display: none; /* Initially hide the dropdown content */
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 0;
+  top: 100%;
+}
+
+/* Dropdown content links */
+.navbar ul li.dropdown .dropdown-content a {
+  display: block; /* Makes each item take up the full width */
+  color: #4b4b4b;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change background color of dropdown items on hover */
+.navbar ul li.dropdown .dropdown-content a:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Show the dropdown when hovering over the dropdown container */
+.navbar ul li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.profile-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  display: none; /* Hide the dropdown by default */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #4caf50;
+  border: 2px solid rgb(13, 133, 0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.profile-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.profile-dropdown:hover{
+  opacity: 0.8;
+}
+
+hr {
+  width: 100%; /* Make the hr span the full width */
+  max-width: 1200px; /* Ensure it matches the container's max width */
+  height: 3px; /* Set the height/thickness */
+  border: none; /* Remove default borders */
+  background-color: #4caf50; /* Change the color */
+  margin: 0 auto; /* Center it inside the container */
+  margin-bottom: 5%;
+}
+
+
+/* Ensure main content grows to fill space */
+main {
+  flex: 1; /* Ensures the content takes up the available space */
+  width: 100%; /* Take up full width of the container */
+  max-width: 1200px; /* Limit the max width */
+  padding: 0 20px; /* Adds padding to the left and right */
+  margin: 0 auto; /* Centers the content horizontally */
+}
+
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  width: 50%;
+  max-height: 80%;
+  overflow-y: auto; /* Scrollable content */
+  border-radius: 10px;
+  padding: 2% 5%;
+  position: relative;
+}
+
+/* Close Button with Box */
+.close-btn-box {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border: 2px solid #338019; /* Green border for the box */
+  background-color: white;
+  color: #338019; /* Match the green theme */
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+/* Header Section */
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Modal Header with Image */
+.modal-header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.modal-header-img {
+max-width: 50%; /* Ensure image fits within the modal width */
+max-height: 80px; /* Set a reasonable height limit */
+object-fit: contain; /* Preserve image aspect ratio */
+}
+
+/* Modal Body Text */
+.modal-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.modal-text h2 {
+  color: #338019;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.modal-text h3 {
+  margin-top: 20px;
+  color: #338019;
+}
+
+.modal-text p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.modal-text ul , .modal-text ol{
+padding-left: 5%;
+}
+
+li.faq-item::marker{
+  color: #338019;
+  font-weight: bold;
+}
+
+.modal-text .efDate{
+color: #338019;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #338019;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkgreen;
+}

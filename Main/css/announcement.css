@@ -1,0 +1,88 @@
+/* Individual announcement item */
+.announcement-item {
+  background: white;
+  margin-bottom: 3%; /* Space between items */
+  border-radius: 20px;
+  box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  padding: 10px 0;
+  padding-bottom: 5px;
+}
+
+/* Table styling inside announcement item */
+.announcement-item table td {
+  padding: 5px 10px; /* Padding inside table cells */
+  vertical-align: top;
+}
+
+/* Image inside announcement item */
+.announcement-item table .image {
+  max-width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Header inside announcement item */
+.announcement-item table h3 {
+  margin: 0 0 10px 0; /* Space below the header */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Paragraph text inside announcement item */
+.announcement-item table p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6; /* Better line spacing for readability */
+}
+
+.announcement-item table a {
+  text-decoration: none;
+}
+
+/* Map Section */
+.map-section {
+  margin: 20px auto;
+  max-width: 100%; /* Keep within viewport width */
+  overflow: hidden;
+}
+
+#map {
+  margin: 0 auto; /* Center the map */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.map-container {
+  max-width: 1200px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .announcement-table td {
+      padding: 5px;
+  }
+
+  .announcement-table img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .announcement-table h3 {
+      font-size: 18px;
+  }
+
+  .announcement-table p {
+      font-size: 12px;
+  }
+}

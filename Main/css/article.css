@@ -1,0 +1,121 @@
+/* Article Container */
+.article-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Heading for the article section */
+.article-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  /* Dark Green for agriculture theme */
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Verdana', sans-serif;
+}
+
+/* Individual article item */
+.article-item {
+  box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Article Image Container */
+.article-image {
+  width: 100%;          /* Ensure the container spans the full width of the article item */
+  height: 500px;        /* Increased height to make the image bigger */
+  overflow: hidden;     /* Hide any overflow */
+  position: relative;   /* Position relative for inner absolute positioning */
+  border-top-right-radius: 8px;   /* Apply rounded corners to the image container */
+  border-top-left-radius: 8px;   /* Apply rounded corners to the image container */
+}
+
+/* Article Image */
+.article-image img {
+  width: 100%;
+  height: auto; /* Ensure images scale proportionally */
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Article Summary */
+.article-summary {
+  padding: 20px;
+}
+
+.article-summary h3 {
+  font-size: 1.5rem;
+  color: #2f6c2f;
+  margin: 0;
+}
+
+.article-summary p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Shortened paragraph initially */
+.short-summary {
+  display: block;
+  max-height: none; /* Remove the max-height for a smoother flow */
+  overflow: hidden;
+}
+
+/* Full paragraph */
+.full-summary {
+  display: none;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+  transition: max-height 0.3s ease-out; /* Smooth transition for expanding text */
+  max-height: 500px; /* Allow the content to expand naturally */
+}
+
+/* Read More Text Link */
+.read-more-text {
+  color: #228b22;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.read-more-text:hover {
+  color: #006400;
+  text-decoration: underline;
+}
+
+/* Adjust the paragraph when the text link is clicked (if the content expands) */
+.article-summary p.expanded {
+  display: block;
+  max-height: 500px; /* Ensure smooth transition effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .article-item {
+      padding: 15px;
+  }
+
+  .article-summary h3 {
+      font-size: 1.3rem;
+  }
+
+  .article-summary p {
+      font-size: 0.9rem;
+  }
+
+  .read-more-text {
+      font-size: 0.9rem;
+  }
+}

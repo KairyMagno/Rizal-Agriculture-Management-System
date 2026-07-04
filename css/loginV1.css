@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-container {
+  flex: 1;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-top-right-radius: 40px 80px;
+  border-bottom-right-radius: 40px 80px;
+}
+
+.logo {
+  margin-bottom: 22%;
+}
+
+.logo .logo-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  max-width: 80px;
+}
+
+.logo .logo-text div{
+  padding-left: 5%;
+}
+
+.logo h1 {
+  margin-top: 3%;
+  font-size: 26px;
+  color: #004c00;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.logo p {
+  font-size: 17px;
+  color: #555;
+}
+
+h2 {
+  margin-bottom: 5%;
+  font-size: 40px;
+  color: #338019;
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group2 {
+  margin-bottom: 2.5%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 12px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Add this for rounded corners */
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #006400; /* Add focus effect */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* Optional shadow effect */
+}
+
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-password img {
+  width: 20px; /* Adjust size */
+  height: 20px;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #006400;
+  text-decoration: none;
+  margin-bottom: 7%;
+  display: block;
+  text-align: end;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.btn-login,
+.btn-signup {
+  width: 40%; /* Adjust this value for the desired width */
+  text-align: center;
+  margin: 0 auto; /* Center the buttons */
+  display: block;
+  box-shadow: -3px 5px 5px 2px rgb(215, 215, 215);
+}
+
+.btn-signup {
+  padding: 12px; /* Ensure the padding matches the login button */
+}
+
+.btn-login {
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-login:hover {
+  background-color: #006400;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.or-divider span {
+  display: block;
+  height: 1px;
+  width: 30%;
+  background-color: #008000;
+}
+
+.or-divider p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-signup {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #008000;
+  border: 2px solid #008000;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.btn-signup:hover {
+  background-color: #e6ffe6;
+}
+
+
+.terms {
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+}
+
+.terms a {
+  color: #006400;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex: 2;
+}
+
+.image-container img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 15px 20px 3px #00640079;
+}
+
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    width: 50%;
+    max-height: 80%;
+    overflow-y: auto; /* Scrollable content */
+    border-radius: 10px;
+    padding: 2% 5%;
+    position: relative;
+}
+
+/* Close Button with Box */
+.close-btn-box {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 2px solid #338019; /* Green border for the box */
+    background-color: white;
+    color: #338019; /* Match the green theme */
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+/* Header Section */
+.modal-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Modal Header with Image */
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-header-img {
+  max-width: 50%; /* Ensure image fits within the modal width */
+  max-height: 80px; /* Set a reasonable height limit */
+  object-fit: contain; /* Preserve image aspect ratio */
+}
+
+/* Modal Body Text */
+.modal-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.modal-text h2 {
+    color: #338019;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.modal-text h3 {
+    margin-top: 20px;
+    color: #338019;
+}
+
+.modal-text p {
+    margin-bottom: 10px;
+}
+
+.modal-text ul , .modal-text ol{
+  padding-left: 5%;
+}
+
+.modal-text .efDate{
+  color: #338019;
+}
+
+/* Webkit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #338019;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkgreen;
+}

@@ -1,0 +1,120 @@
+/* Container for all announcements */
+.announcement-container {
+  padding: 2.5% 10%; /* Spacing inside the container */
+}
+
+/* Individual announcement item */
+.announcement-item {
+  background: white;
+  margin-bottom: 2%; /* Space between items */
+  border-radius: 20px;
+  box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  padding: 20px; /* Padding for content */
+}
+
+table{
+  width: 100%;
+}
+
+/* Table styling inside announcement item */
+.announcement-item table td {
+  padding: 10px; /* Padding inside table cells */
+  padding-bottom: 0;
+  vertical-align: top; /* Align content to the top */
+}
+
+/* Image inside announcement item */
+.announcement-item table .image {
+  max-width: 150px;
+  height: auto;
+  margin-right: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Header inside announcement item */
+.announcement-item table h4 {
+  margin: 0 0 10px 0; /* Space below the header */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Paragraph text inside announcement item */
+.announcement-item table p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6; /* Better line spacing for readability */
+}
+
+.announcement-item table a {
+  text-decoration: none;
+}
+
+/* Buttons (Edit & Delete) */
+.announcement-title-container {
+  display: flex;
+  justify-content: space-between;  /* Ensures the title and buttons are spread out */
+  align-items: center;  /* Vertically centers the title and buttons */
+}
+
+.announcement-buttons {
+  display: flex;
+  gap: 10px;  /* Adds space between the buttons */
+  justify-content: flex-end;  /* Aligns buttons to the right */
+}
+
+.announcement-title-container h4 {
+  margin: 0;  /* Removes any default margin */
+}
+
+.announcement-buttons button {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Edit button style */
+.announcement-buttons .edit-btn {
+  color: #338019;
+  border: 2px solid #338019;
+  background-color: transparent;
+}
+
+/* Delete button style */
+.announcement-buttons .delete-btn {
+  color: #EF4444;
+  border: 2px solid #EF4444;
+  background-color: transparent;
+}
+
+/* Hover effect for buttons */
+.announcement-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Button icon (edit/delete) spacing */
+.announcement-buttons img {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust padding for smaller screens */
+  .announcement-item {
+    padding: 15px;
+  }
+
+  /* Adjust font sizes for readability on smaller screens */
+  .announcement-summary h4 {
+    font-size: 1.25rem;
+  }
+
+  .announcement-summary p {
+    font-size: 0.9rem;
+  }
+}

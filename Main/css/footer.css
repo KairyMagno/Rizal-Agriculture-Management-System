@@ -1,0 +1,95 @@
+.footer {
+  background-color: #338019;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  align-items: flex-start;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-logo {
+  width: 13%; /* Adjust the size of the logo */
+  margin-right: 10px;
+}
+
+.footer-text{
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+.footer-logo-text p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.subtext{
+  font-size: 12px;
+  color: #F1F7F9;
+  font-weight: bold;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links span {
+  color: white;
+  margin: 0 5px;
+}
+
+.footer-links span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-right .follow{
+  margin: 5px 0;
+  margin-top: 15%;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.social-icons {
+  margin: 5px 0;
+  margin-left: 5px;
+  margin-bottom: 5%;
+  display: inline-block;
+
+}
+
+.social-icons img {
+  width: 20px; /* Adjust the size of the icons */
+  margin: 0 5px;
+}
+
+.footer-right p:last-child {
+  margin-top: 10px;
+  font-size: 14px;
+}

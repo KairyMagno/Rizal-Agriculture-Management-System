@@ -1,0 +1,35 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px 50px;
+    background-color: white;
+    height: 15%; /* Fixed height */
+    box-shadow: 0 4px 4px rgba(30, 30, 30, 0.25);
+    box-sizing: border-box;
+    position: sticky; /* Stick to the top while scrolling */
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    border: 2px solid #338019;
+    background: #338019;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: white;
+    color: black;
+}

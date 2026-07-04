@@ -1,0 +1,68 @@
+/* Center the table and apply agricultural theme */
+table {
+    width: 80%;
+    margin: 30px auto; /* Center the table horizontally and add top margin */
+    border-collapse: collapse;
+    background-color: #f8f9c9; /* Light greenish background */
+    border: 2px solid #4e8c4f; /* Darker green border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the table */
+}
+
+th, td {
+    padding: 15px; /* Add space around content */
+    text-align: center; /* Center the text inside the table cells */
+    font-weight: 500;
+    color: #4e8c4f; /* Dark green color for text */
+}
+
+th {
+    background-color: #6a9c3f; /* Dark green background for header */
+    color: white; /* White text for header */
+    font-size: 18px; /* Larger font for header */
+}
+
+td {
+    background-color: #f1f8e9; /* Light background for table data cells */
+}
+
+tr:nth-child(even) td {
+    background-color: #dce6d1; /* Slightly darker background for even rows */
+}
+
+tr:hover td {
+    background-color: #b6d7b1; /* Light green hover effect */
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover; /* Ensures the image fits well within the cell */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.btn-success {
+    background-color: #20672f; /* Soft green background for buttons */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #1f6421; /* Darker green when hovered */
+    cursor: pointer;
+}
+
+td, th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Add some space around the table for better visibility */
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,237 @@
+/* General Button Styles */
+.add-btn {
+  margin-top: 70px;
+  margin-left: 87%;
+  display: flex;
+  gap: 10px;  /* Adds space between the buttons */
+  justify-content: flex-end;  /* Aligns buttons to the right */
+}
+
+.add-btn:hover {
+  background-color: #45a049; /* Slightly lighter green when hovered */
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: #ff6f61; /* Red color for close button on hover */
+}
+
+/* Form Styling */
+form input {
+  display: block;
+  width: 90%;
+  padding: 8px;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #4CAF50; /* Green button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+form button:hover {
+  background-color: #45a049; /* Darker green for hover effect */
+}
+
+/* Table Styles */
+table {
+  margin-left: 50px;
+  width: 92%;
+  border-collapse: collapse;
+  margin-top: -10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #338019; /* Green background for header */
+  color: white;
+}
+
+td {
+  font-size: 16px;
+}
+
+/* Action Buttons */
+.action-btn {
+  background-color: #4CAF50; /* Green color for action buttons */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.action-btn:hover {
+  background-color: #45a049; /* Darker green for hover */
+}
+
+.action-btn.delete {
+  background-color: #f44336; /* Red color for delete action */
+  color: white;
+}
+
+.action-btn.delete:hover {
+  background-color: #e53935; /* Darker red for hover */
+}
+
+/* Aligning the buttons to the right */
+.right-button-container {
+  margin-left: -14.5%;
+  margin-bottom: -45px;
+}
+
+/* Click Feedback (Active State) for Buttons */
+.add-btn button:active, .action-btn:active {
+  transform: scale(0.98); /* Slightly shrink the button to simulate a "press" effect */
+  background-color: #45a049; /* Keep the hover background color when clicked */
+}
+
+/* Click Feedback for Table Rows */
+table tr:active {
+  background-color: #c8e6c9; /* Light green background when a row is clicked */
+  transform: scale(1.01); /* Slightly grow the row on click */
+  transition: background-color 0.2s, transform 0.1s; /* Smooth transition for the effect */
+}
+
+/* Optional: Click Feedback for Table Cells (if you want the cell to show feedback on click too) */
+table td:active {
+  background-color: #e0f7da; /* Light green background for cells when clicked */
+  transition: background-color 0.2s;
+}
+
+.category-report h3 {
+  font-size: 24px;
+  color: #338019;
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.category-report table {
+  width: 95%;
+  border-collapse: collapse;
+  margin-top: -10px;
+}
+
+.category-report th, .category-report td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.category-report th {
+  background-color: #338019; /* Green background for header */
+  color: white;
+  font-weight: bold;
+}
+
+.category-report td {
+  background-color: #f9f9f9; /* Light background for table rows */
+  font-size: 16px;
+}
+
+/* Alternate Row Color for Category List */
+.category-report tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.category-report tr:hover {
+  background-color: #e0f7da; /* Light green hover effect */
+}
+
+/* General Table Styles */
+table {
+  width: 95%; /* Table width */
+  margin: 20px auto; /* Centering the table with some margin */
+  border-collapse: collapse; /* Ensures borders are collapsed between cells */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Light grey border */
+  padding: 12px; /* Spacing inside cells */
+  text-align: left; /* Left-aligned text */
+  vertical-align: middle; /* Center text vertically */
+}
+
+th {
+  background-color: #338019; /* Green background for header */
+  color: white; /* White text */
+  font-weight: bold; /* Bold header text */
+}
+
+td {
+  font-size: 16px; /* Standard font size for the content */
+  background-color: #f9f9f9; /* Light grey background for rows */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row background for readability */
+}
+
+tr:hover {
+  background-color: #e0f7da; /* Light green hover effect */
+}
+
+/* No data message */
+.category-report td[colspan='1'] {
+  text-align: center; /* Center the "No categories found" message */
+  font-style: italic; /* Italicize the message */
+  color: #888; /* Grey color for the message */
+}
+
+.activity-log,
+.user-status,
+.user-roles,
+.click-report,
+.category-report,
+.clicks-container{
+  margin: 1% 5%;
+}

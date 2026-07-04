@@ -1,0 +1,97 @@
+.category-container{
+  padding: 1% 5%; 
+}
+
+.category-container h2{
+  color: #338019;
+  font-size: 28px;
+}
+
+.category-container h3{
+  margin: 0;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.category-item a{
+  text-decoration: none;
+  color: #333;
+}
+
+.category-img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-top-left-radius: 8px;   /* Apply rounded corners to the image container */
+    border-bottom-left-radius: 8px;   /* Apply rounded corners to the image container */
+}
+
+.category-content{
+  width: 100%;
+}
+
+.category-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.category-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.multimedia-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.multimedia-buttons button {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.multimedia-buttons .edit-btn {
+  color: #338019;
+  border: 2px solid #338019;
+  background-color: none;
+  border-radius: 5px;
+}
+
+.multimedia-buttons .delete-btn {
+  background-color: none;  /* Red for Delete */
+  color: #EF4444;
+  border: 2px solid #EF4444;
+  border-radius: 5px;
+}
+
+.multimedia-buttons button:hover {
+  opacity: 0.8;  /* Slight hover effect */
+}
+
+.multimedia-buttons img {
+  margin-right: 8px; /* Space between icon and text */
+}
+

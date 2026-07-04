@@ -1,0 +1,159 @@
+/* Articles Container */
+.articles-container {
+  flex: 1; /* Fills the remaining space */
+  padding: 50px 10%;
+  overflow-y: auto;
+}
+
+/* Article Item */
+.article-item {
+  box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Article Image Container */
+.article-image {
+  width: 100%;          /* Ensure the container spans the full width of the article item */
+  height: 500px;        /* Increased height to make the image bigger */
+  overflow: hidden;     /* Hide any overflow */
+  position: relative;   /* Position relative for inner absolute positioning */
+  border-top-right-radius: 8px;   /* Apply rounded corners to the image container */
+  border-top-left-radius: 8px;   /* Apply rounded corners to the image container */
+}
+
+/* Article Image */
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Article Summary */
+.article-summary {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;  /* Stack the title and content vertically */
+  justify-content: flex-start;  /* Align items to the start */
+}
+
+/* Flex container for Read More and Buttons in the same line */
+.article-summary .bottom-row {
+  display: flex;
+  justify-content: space-between;  /* Space out Read More and buttons */
+  align-items: center;  /* Align the items vertically */
+  margin-top: 10px;
+}
+
+.article-summary .article-buttons {
+  display: flex;
+  gap: 10px;  /* Add space between the buttons */
+}
+
+.article-buttons button {
+  display: flex;
+  align-items: center;
+  padding: 6px 15px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.article-buttons .edit-btn {
+  color: #338019;
+  border: 2px solid #338019;
+  background-color: none;
+  border-radius: 5px;
+}
+
+.article-buttons .delete-btn {
+  background-color: none;  /* Red for Delete */
+  color: #EF4444;
+  border: 2px solid #EF4444;
+  border-radius: 5px;
+}
+
+.article-buttons button:hover {
+  opacity: 0.8;  /* Slight hover effect */
+}
+
+.article-buttons img {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.article-summary h3 {
+  font-size: 1.5rem;
+  color: #2f6c2f;
+  margin: 0;
+}
+
+.article-summary p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Shortened paragraph initially */
+.short-summary {
+  display: block;
+  max-height: none; /* Remove the max-height for a smoother flow */
+  overflow: hidden;
+}
+
+/* Full paragraph */
+.full-summary {
+  display: none;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+  transition: max-height 0.3s ease-out; /* Smooth transition for expanding text */
+  max-height: 500px; /* Allow the content to expand naturally */
+}
+
+/* Read More Text Link */
+.read-more-text {
+  color: #228b22;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.read-more-text:hover {
+  color: #006400;
+  text-decoration: underline;
+}
+
+/* Adjust the paragraph when the text link is clicked (if the content expands) */
+.article-summary p.expanded {
+  display: block;
+  max-height: 500px; /* Ensure smooth transition effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .article-item {
+      padding: 15px;
+  }
+
+  .article-summary h3 {
+      font-size: 1.3rem;
+  }
+
+  .article-summary p {
+      font-size: 0.9rem;
+  }
+
+  .read-more-text {
+      font-size: 0.9rem;
+  }
+}

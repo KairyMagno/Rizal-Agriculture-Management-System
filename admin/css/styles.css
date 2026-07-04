@@ -1,0 +1,174 @@
+/* General Styles */
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh; /* Ensure the layout spans the full viewport height */
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Main content takes the remaining space after the sidebar */
+    margin-left: 250px; /* Matches the sidebar width */
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+    overflow-y: auto; /* Allow vertical scrolling */
+    background-color: #33801911;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #338019;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: darkgreen;
+  }
+  
+
+/* Total Users Section
+.total-users {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.total-users h2 {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.total-users p {
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #34495e;
+    color: white;
+    text-align: left;
+    padding: 16px;
+    font-size: 16px;
+}
+
+tbody td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+thead th, tbody td {
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #ecf0f1;
+} */
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 0;
+    } */
+
+    /* Vertical Table Layout on Small Screens */
+    /* table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: none;
+    }
+
+    tbody td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #34495e;
+        margin-right: 10px;
+    }
+
+    tbody tr:hover {
+        background-color: #f0f8ff;
+    }
+} */
+
+/* Table Styling for Larger Screens */
+/* @media (min-width: 769px) {
+    table {
+        margin-top: 20px;
+    }
+
+    tbody td {
+        font-size: 14px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        margin-bottom: 30px;
+    }
+
+    .table-wrapper table {
+        width: 100%;
+    }
+} */

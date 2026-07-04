@@ -1,0 +1,173 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* Fix sidebar position */
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  box-sizing: border-box; /* Include padding and borders in width/height calculations */
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+/* Header Styles */
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20%;
+}
+
+.header-title h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo {
+  width: 30%;
+  margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 25px 0;
+}
+
+.nav-links a {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 10px;
+  font-size: 15px;
+  padding-left: 20px;
+  transition: background-color 0.3s, padding-left 0.3s;
+  border-radius: 10px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background-color: #338019;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  background-color: #e3ffda;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.sidebar ul .dropdown .dropbtn {
+  position: relative; /* To position the arrow next to it */
+}
+
+.sidebar ul .dropdown .dropbtn::after {
+  content: " ▼"; /* Adds the down arrow */
+  font-size: 14px;
+  margin-left: 70%; /* Space between the text and the arrow */
+  transition: transform 0.3s ease; /* Smooth flip effect */
+  position: absolute;
+}
+
+.sidebar ul .dropdown:hover .dropbtn::after {
+  transform: rotate(180deg); /* Flip the arrow */
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown when hovering over the button */
+}
+
+/* Navigation Icons */
+.nav-links img.nav-icon {
+  width: 20px;
+  /* Set a fixed size for icons */
+  height: auto;
+  margin-right: 10px;
+  /* Space between the icon and the text */
+}
+
+/* Logout Button */
+.logout-btn {
+  height: 40px;
+  width: 100%;
+  color: #4caf50;
+  background-color: #f4fcf4;
+  border: green solid 2px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #fffaf9;
+}
+
+.fas {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+      width: 200px; /* Reduce sidebar width */
+      padding: 15px;
+  }
+  .header-title h1 {
+      font-size: 18px; /* Adjust font size */
+  }
+  .nav-links a {
+      font-size: 14px; /* Adjust link font size */
+      padding: 8px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+      transform: translateX(-100%); /* Hide sidebar by default on small screens */
+  }
+  .sidebar.hidden {
+      transform: translateX(-100%);
+  }
+  .sidebar.visible {
+      transform: translateX(0);
+  }
+  .header-title h1 {
+      font-size: 16px;
+  }
+  .nav-links a {
+      font-size: 12px;
+      padding: 6px 8px;
+  }
+}

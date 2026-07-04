@@ -1,0 +1,57 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  height: 400px;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style for the dots inside the carousel */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px; /* Adjust position */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #338019; /* Dark green for the active dot */
+}
+
+.dot.lighter-1 {
+  background-color: #71b567; /* Slightly lighter green */
+}
+
+.dot.lighter-2 {
+  background-color: #a4d18e; /* Even lighter green */
+}
+
+.dot.lighter-3 {
+  background-color: #d6e9c8; /* Lightest green */
+}
