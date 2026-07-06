@@ -168,7 +168,3 @@ Developed as an academic web application project for agricultural information ma
 ---
 
 ## 📄 License
-
-This project is intended for **educational and academic purposes only**.
-Feel free to fork and modify for learning and research.
-If you want, I can next upgrade this into a **“premium portfolio README” with badges, screenshots section, and GitHub stats cards”** (the kind recruiters actually stop scrolling for).
