@@ -1,147 +1,174 @@
-Got it — we’ll stop iterating and lock in a **single clean FINAL BOSS version** that is:
+# 🌾 RizalAgriCultiva
 
-* professional (recruiter-ready)
-* not cluttered
-* visually strong
-* portfolio-style
-* no overdesign chaos
+**RizalAgriCultiva** is a web-based Agriculture Information and Management System designed to provide farmers, agricultural personnel, and the public with easy access to agricultural news, announcements, educational resources, and administrative services.
 
-Copy this into your GitHub profile README and you’re done 👇
+It streamlines content management while promoting digital accessibility for agricultural programs and information.
 
 ---
 
-# ⚡ KAIRY KEN MAGNO
+## 📖 Overview
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=900&color=00F5FF&center=true&vCenter=true&width=900&lines=Full-Stack+Developer;Laravel+%7C+PHP+%7C+JavaScript+%7C+MySQL;AI+Automation+Engineer;Building+Real-World+Systems" />
-</p>
+RizalAgriCultiva serves as an online agricultural information portal with a dedicated administrator dashboard for managing website content.
 
----
+It allows administrators to publish and manage:
 
-## 👨‍💻 ABOUT ME
+* Announcements
+* Articles and educational content
+* Multimedia resources
+* FAQs
+* Agricultural updates
 
-Full-Stack Developer from the Philippines focused on building **real-world systems and automation tools**.
-
-I specialize in:
-
-* ⚙️ Backend development (Laravel / PHP)
-* 🤖 AI automation (n8n + LLMs)
-* 🔌 API integrations
-* 🗄️ Database systems (MySQL)
-
-I build systems that replace manual work with automation and scalable logic.
+While providing visitors with a centralized platform for reliable agricultural information.
 
 ---
 
-## 🚀 FEATURED PROJECTS
+## ✨ Features
 
-### 🕒 DTR Management System
+### 🌐 Public Website
 
-Laravel • PHP • MySQL
+* Responsive landing page
+* Agricultural news and announcements
+* Educational articles and resources
+* Multimedia gallery
+* Frequently Asked Questions (FAQ)
+* Contact information page
+* Visitor tracking and analytics
 
-✔ Attendance automation system
-✔ Role-based authentication
-✔ Leave management workflow
-✔ Admin dashboard + analytics
+### 🛠️ Administrator Dashboard
 
-🔗 [https://github.com/KairyMagno/dtr-management-system](https://github.com/KairyMagno/dtr-management-system)
-
----
-
-### 🤖 AI Resume Screening System
-
-n8n • Groq LLM • Docker • Google APIs
-
-✔ AI resume parsing & classification
-✔ Automated HR email system
-✔ Google Drive + Sheets integration
-✔ Duplicate detection system
-
-🔗 [https://github.com/KairyMagno/n8n-resume-automation](https://github.com/KairyMagno/n8n-resume-automation)
-
----
-
-### 🎮 Finding Isabel (Capstone Game)
-
-Unity • C#
-
-✔ Horror exploration gameplay
-✔ Puzzle system
-✔ Story-driven experience
-✔ Award-winning capstone project
-
-🔗 [https://github.com/KairyMagno/finding-isabel-horror-game](https://github.com/KairyMagno/finding-isabel-horror-game)
+* Secure administrator authentication
+* Dashboard overview
+* Announcement management
+* Article management
+* Multimedia management
+* User management
+* Archive and restore records
+* Activity logs
+* Report generation (PDF)
+* Email notification system
+* Website settings management
 
 ---
 
-### 🏀 HoopsHub Mobile App
+## 🧰 Technologies Used
 
-Flutter • Dart
+### Backend
 
-✔ Basketball gym management system
-✔ Coach & schedule system
-✔ Equipment tracking
+* PHP
+* MySQL
+* PHPMailer
 
-🔗 [https://github.com/KairyMagno/HoopsHub-Mobile](https://github.com/KairyMagno/HoopsHub-Mobile)
+### Frontend
 
----
+* HTML5
+* CSS3
+* JavaScript
 
-### 🌾 Agriculture Management System
+### Development Tools
 
-PHP • MySQL • JavaScript
-
-✔ Content management system
-✔ Admin dashboard
-✔ PDF reports & email system
-
-🔗 [https://github.com/KairyMagno/Rizal-Agriculture-Management-System](https://github.com/KairyMagno/Rizal-Agriculture-Management-System)
-
----
-
-## 🛠️ TECH STACK
-
-**Languages:** PHP • JavaScript • Java • C#
-**Frameworks:** Laravel • Flutter • Tailwind CSS
-**Databases:** MySQL
-**Tools:** Git • GitHub • Docker • n8n
-**APIs:** REST • Google APIs • LLM integrations
+* Visual Studio Code
+* XAMPP / Apache
+* phpMyAdmin
+* Composer
 
 ---
 
-## 📊 GITHUB STATS
+## 📂 Project Structure
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=KairyMagno&show_icons=true&theme=tokyonight" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KairyMagno&layout=compact&theme=tokyonight" />
-</p>
-
----
-
-## 📫 CONTACT
-
-📧 Email: [kairymagno@gmail.com](mailto:kairymagno@gmail.com)
-📱 Phone: 0915 957 4952
-🌐 Portfolio: [https://kairymagno.github.io/portfolio](https://kairymagno.github.io/portfolio)
-💼 LinkedIn: linkedin.com/in/kairy-ken-magno
+```
+RizalAgriCultiva/
+│
+├── admin/          # Admin dashboard modules
+├── assets/         # Images and media assets
+├── css/            # Stylesheets
+├── includes/       # DB connection & reusable PHP files
+├── login/          # Authentication system
+├── uploads/        # Uploaded files and media
+├── vendor/         # Composer dependencies
+├── Main/           # Main website pages
+├── data/           # Data resources
+└── index.php       # Landing page
+```
 
 ---
 
-## ⚡ OBJECTIVE
+## 🚀 Installation
 
-Seeking a **Junior Software Developer role** where I can contribute to backend systems, automation workflows, and scalable application development.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/RizalAgriCultiva.git
+   ```
+
+2. Move the project to your **XAMPP `htdocs`** directory.
+
+3. Create a MySQL database.
+
+4. Import the provided SQL file into phpMyAdmin.
+
+5. Configure database connection:
+
+   ```
+   includes/db.php
+   ```
+
+6. Install dependencies:
+
+   ```bash
+   composer install
+   ```
+
+7. Start Apache and MySQL using XAMPP.
+
+8. Open in browser:
+
+   ```
+   http://localhost/RizalAgriCultiva/
+   ```
 
 ---
 
-# END
+## 📊 Core Modules
+
+* User Authentication
+* Content Management System
+* News & Announcements
+* Agricultural Articles
+* Multimedia Gallery
+* FAQ Management
+* Activity Logging
+* Visitor Analytics
+* Email Notifications
+* PDF Report Generation
 
 ---
 
-If you want next upgrade after this (optional, not another rewrite), I can help you:
+## 🎯 Purpose
 
-* match this README with your actual portfolio website design
-* or make your portfolio site look like this GitHub profile
+This project was developed to modernize the dissemination of agricultural information by providing a centralized digital platform that improves communication between agricultural offices and the community.
 
-But for GitHub: this is already **final recruiter-grade level**.
+It reduces manual content management while increasing accessibility to important agricultural updates and educational materials.
+
+---
+
+## 🔒 Requirements
+
+* PHP 8+
+* MySQL
+* Apache Server
+* Composer
+* PHPMailer
+
+---
+
+## 👨‍💻 Developer
+
+Developed as an academic web application project for agricultural information management.
+
+---
+
+## 📄 License
+
+This project is intended for **educational and academic purposes only**.
+Feel free to fork and modify for learning and research.
+If you want, I can next upgrade this into a **“premium portfolio README” with badges, screenshots section, and GitHub stats cards”** (the kind recruiters actually stop scrolling for).
